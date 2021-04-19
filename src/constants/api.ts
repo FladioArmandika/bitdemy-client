@@ -1,5 +1,5 @@
 
-type StatusResponseType = 'SUCCESS' | 'FAILURE'
+// type StatusResponseType = 'SUCCESS' | 'FAILURE'
 type methodAPI = 'GET' | 'POST' | 'PUT' | 'DELETE';
 
 const SERVER_URL = process.env.REACT_APP_SERVER_URL;
