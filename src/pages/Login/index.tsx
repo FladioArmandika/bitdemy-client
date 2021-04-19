@@ -19,7 +19,6 @@ export default function LoginPage(props: Props): ReactElement {
             <div className="flex w-full max-w-md">
                 <Button full type="primary" onClick={() => goToHome()}>Login</Button>
             </div>
-            <Text white>Hello</Text>
         </div> 
     )
 }    

@@ -2,13 +2,14 @@ import classNames from 'classnames'
 import React, { ReactElement } from 'react'
 
 
-type textSize = "small" | "large" | 'super'
+type textSize = "small" | "large" | 'xlarge' | 
+type textAlign = "left" | "center" | 'right'
 interface Props {
     children: React.ReactNode,
     white?: boolean,
     bold?: boolean,
     size?: textSize,
-
+    align?: textAlign,
 
     style?: string,
 }
@@ -21,7 +22,11 @@ function Text(props: Props): ReactElement {
 
             "text-sm": props.size === 'small',
             "text-lg": props.size === 'large',
-            "text-4xl": props.size === 'super',
+            "text-4xl": props.size === 'xlarge',
+
+            "text-left": props.align === 'left',
+            "text-center": props.align === 'center',
+            "text-right": props.align === 'right',
         })}>
             {props.children}
         </div>
