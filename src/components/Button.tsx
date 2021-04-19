@@ -19,10 +19,10 @@ function Button(props: Props): ReactElement {
     return (
         <button
             className={classNames("flex py-2 rounded justify-center font-bold text-white", {
-                "bg-purple-500": props.type === "primary",
+                "bg-purple": props.type === "primary",
                 "bg-yellow-500": props.type === "secondary",
 
-                "hover:bg-purple-600": props.type === "primary",
+                "hover:bg-purple": props.type === "primary",
                 "hover:bg-yellow-600": props.type === "secondary",
 
                 "w-full": props.full,
