@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react'
 
-import { theme} from '../../../tailwind.config'
 import { color } from '../../constants/colors'
 
 interface Props {
