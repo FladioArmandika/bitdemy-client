@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import React, { ReactElement } from 'react'
+import { color } from '../constants/colors'
 import { StyleCursor } from '../types/style'
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 
     height?: number,
     width?: number,
-    style?: any,
+    style?: any, 
     cursor?: StyleCursor
 }    
 
@@ -16,13 +17,13 @@ class Card {
     public static Container(props: Props): ReactElement {
         return (
             <div className={classNames( 
-                `flex flex-col rounded w-full bg-gray-700
+                `flex flex-col rounded w-full
                 border-transparent  bg-no-repeat 
                 h-${props.height} w-${props.width}
                 cursor-${props.cursor}`, {
 
             })}
-               style={props.style}>
+               style={{...props.style, background: color.BACKGROUND_SECONDARY}}>
                 {props.children}
             </div>
         )
@@ -34,7 +35,7 @@ class Card {
                 `py-4 px-5 flex justify-between items-center rounded`,  
                 {}
             )} 
-            style={props.style}> 
+            style={{...props.style, background: color.BACKGROUND_SECONDARY}}> 
                 {props.children}
             </div>
         )
