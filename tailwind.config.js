@@ -24,7 +24,10 @@ module.exports = {
       green: colors.emerald,
       blue: colors.blue,
       indigo: colors.indigo,
-      purple: "#9422CA",
+      purple: {
+        400: "#EDC6FF",
+        600: "#9422CA",
+      },
       pink: colors.pink,
     },
     spacing: {
@@ -708,6 +711,7 @@ module.exports = {
     }),
     zIndex: {
       auto: 'auto',
+      '-10': '-10',
       0: '0',
       10: '10',
       20: '20',
