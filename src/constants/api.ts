@@ -9,6 +9,12 @@ interface apiRoute {
     method: methodAPI
 }
 
+// AUTH
+export const API_AUTH_LOGIN: apiRoute = { url: SERVER_URL + '/auth/google', method: 'GET' }
+export const API_AUTH_VERIFY: apiRoute = { url: SERVER_URL + '/auth/token/verify', method: 'GET' }
+
+
+
 // COURSE
 export const API_COURSE_GET: apiRoute = { url: SERVER_URL + '/course', method: 'GET' }
 export const API_COURSE_GET_BY_CATEGORY: apiRoute = { url: SERVER_URL + '/course/category', method: 'GET' }
