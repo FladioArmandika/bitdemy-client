@@ -1,5 +1,7 @@
 export { default as Landing } from './Landing'
 export { default as Login } from './Login'
+export { default as LoginSuccess } from './LoginSuccess'
 export { default as Home } from './Home'
 export { default as Course } from './Course'
 export { default as CourseDetail } from './CourseDetail'
+export { default as Page404 } from './Page404'

@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ROUTE_AUTH_LOGIN, ROUTE_COURSE_DETAIL } from '../../constants/route'
-import { Text, Card, Button } from '../../components'
+import { ROUTE_COURSE_DETAIL } from '../../constants/route'
+import { Text, Card } from '../../components'
 import { IconVideo, IconProductivity, IconPlay, IconCode, IconFinance, IconBusiness, IconLanguage, IconDesign } from '../../assets/icons'
 import { color } from '../../constants/colors'
 import CategoryAPI from '../../api/category'
@@ -70,7 +70,7 @@ function HomePage(props: Props): ReactElement {
 
                 <div className="mt-32 relative">
                     <div className="flex flex-col md:flex-row justify-between">
-                        <div className="max-w-sm w-full mt-3 mt-0"> 
+                        <div className="max-w-sm w-full mt-3 md:mt-0"> 
                             <Card.Container cursor="pointer">
                                 <Card.Content>
                                     <div className="flex flex-row items-center">
@@ -80,7 +80,7 @@ function HomePage(props: Props): ReactElement {
                                 </Card.Content>
                             </Card.Container>
                         </div>
-                        <div className="max-w-sm w-full mt-3 mt-0"> 
+                        <div className="max-w-sm w-full mt-3 md:mt-0"> 
                             <Card.Container cursor="pointer">
                                 <Card.Content>
                                     <div className="flex flex-row items-center">
@@ -90,7 +90,7 @@ function HomePage(props: Props): ReactElement {
                                 </Card.Content>
                             </Card.Container>
                         </div>
-                        <div className="max-w-sm w-full mt-3 mt-0"> 
+                        <div className="max-w-sm w-full mt-3 md:mt-0"> 
                             <Card.Container cursor="pointer">
                                 <Card.Content>
                                     <div className="flex flex-row items-center">
@@ -102,7 +102,7 @@ function HomePage(props: Props): ReactElement {
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row  justify-between mt-0 md:mt-5">
-                        <div className="max-w-sm w-full mt-3 mt-0"> 
+                        <div className="max-w-sm w-full mt-3 md:mt-0"> 
                             <Card.Container cursor="pointer">
                                 <Card.Content>
                                     <div className="flex flex-row items-center">
@@ -112,7 +112,7 @@ function HomePage(props: Props): ReactElement {
                                 </Card.Content>
                             </Card.Container>
                         </div>
-                        <div className="max-w-sm w-full mt-3 mt-0"> 
+                        <div className="max-w-sm w-full mt-3 md:mt-0"> 
                             <Card.Container cursor="pointer">
                                 <Card.Content>
                                     <div className="flex flex-row items-center">
@@ -122,7 +122,7 @@ function HomePage(props: Props): ReactElement {
                                 </Card.Content>
                             </Card.Container>
                         </div>
-                        <div className="max-w-sm w-full mt-3 mt-0"> 
+                        <div className="max-w-sm w-full mt-3 md:mt-0"> 
                             <Card.Container cursor="pointer">
                                 <Card.Content>
                                     <div className="flex flex-row items-center">
