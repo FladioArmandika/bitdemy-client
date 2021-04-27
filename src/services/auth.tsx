@@ -10,7 +10,7 @@ export default class AuthService {
             .then((data) => {
                 if (data) return data._doc
                 else 
-                    return {}
+                    return null
             })
     }
 

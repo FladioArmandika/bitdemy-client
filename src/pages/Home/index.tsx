@@ -5,7 +5,7 @@ import { Text, Card } from '../../components'
 import { IconVideo, IconProductivity, IconPlay, IconCode, IconFinance, IconBusiness, IconLanguage, IconDesign } from '../../assets/icons'
 import { color } from '../../constants/colors'
 import CategoryAPI from '../../api/category'
-import { Category, Course } from '../../types/style'
+import { Category, Course } from '../../types/type'
 
 interface Props {
     

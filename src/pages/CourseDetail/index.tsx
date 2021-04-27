@@ -2,7 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import CourseAPI from '../../api/course';
 import { color } from '../../constants/colors';
-import { Course, Video } from '../../types/style';
+import { Course, Video } from '../../types/type';
 
 interface RouteParams {
     courseId: string
