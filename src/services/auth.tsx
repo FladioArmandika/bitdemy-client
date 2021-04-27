@@ -1,16 +1,21 @@
-import Cookies from "universal-cookie/es6";
 import AuthAPI from "../api/auth"
+import { STORAGE_USER_ID } from "../constants/storage";
 
 export default class AuthService {
 
-    private cookies = new Cookies();
     private authAPI: AuthAPI = new AuthAPI();
 
     public verifyUser = () => {
-        this.authAPI.verifyUser()
+        return this.authAPI.verifyUser()
             .then((data) => {
-                console.log(data);
+                if (data) return data._doc
+                else 
+                    return {}
             })
     }
+
+    // public setUser = (userId: string) => {
+    //     localStorage.setItem(STORAGE_USER_ID, userId)
+    // }
 
 }
